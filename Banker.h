@@ -16,7 +16,7 @@ int available[numResources] = { 3, 5, 1 };
 /*the maximum demand of each customer */
 int maximum[numCustomers][numResources] = {
 	{ 3, 7, 6 },
-	{ 2, 4, 1 },
+	{ 2, 4, 4 },
 	{ 5, 2, 8 },
 	{ 8, 6, 9 },
 	{ 4, 3, 7 }
@@ -24,14 +24,14 @@ int maximum[numCustomers][numResources] = {
 /* the amount currently allocated to each customer */
 int allocation[numCustomers][numResources] = {
 	{ 0, 2, 1 },
-	{ 1, 1, 1 },
+	{ 1, 1, 4 },
 	{ 1, 0, 3 },
 	{ 3, 2, 1 },
 	{ 0, 0, 0 }
 };
 /* the remaining need of each customer */
 int need[numCustomers][numResources];
-bool finished[numCustomers];
+bool complete[numCustomers];
 
 
 
@@ -40,7 +40,13 @@ bool finished[numCustomers];
 public:
 	Banker();
 	void printCustomers();
+	void printAvailable();
+	void doTheThing();
+	bool finished();
+	bool mayAllocate(int input);
+	void deAllocate(int input);
 
+	void getFileInput();
 };
 
 
