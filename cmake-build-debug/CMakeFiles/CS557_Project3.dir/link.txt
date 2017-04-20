@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/CS557_Project3.dir/main.cpp.o CMakeFiles/CS557_Project3.dir/Banker.cpp.o  -o CS557_Project3 
