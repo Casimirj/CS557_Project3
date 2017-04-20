@@ -1,6 +1,19 @@
 #include <iostream>
+#include"Banker.h"
+
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+	Banker* object = new Banker();
+
+
+
+
+
+
+
+	system("pause");
     return 0;
 }
+
+
