@@ -5,6 +5,7 @@
 #include "Banker.h"
 #include<string>
 #include<ifstream>
+#include<file>
 
 
 Banker::Banker() {
@@ -92,5 +93,14 @@ void Banker::deAllocate(int input) {
 	}
 }
 void getFileInput() {
+	
+
+
+
+
+
+
+
+
 
 }
