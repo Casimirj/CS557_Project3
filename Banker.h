@@ -15,39 +15,25 @@ private:
 /* the available amount of each resource */
 int available[numResources];
 /*the maximum demand of each customer */
-int maximum[numCustomers][numResources] = {
-	{ 3, 7, 6 },
-	{ 2, 4, 4 },
-	{ 5, 2, 8 },
-	{ 8, 6, 9 },
-	{ 4, 3, 7 }
-};
+int maximum[numCustomers][numResources];
 /* the amount currently allocated to each customer */
-int allocation[numCustomers][numResources] = {
-	{ 0, 2, 1 },
-	{ 1, 1, 4 },
-	{ 1, 0, 3 },
-	{ 3, 2, 1 },
-	{ 0, 0, 0 }
-};
+int allocation[numCustomers][numResources];
 /* the remaining need of each customer */
 int need[numCustomers][numResources];
 bool complete[numCustomers];
 
-
-
-
-
 public:
 	Banker();
-	void printCustomers();
-	void printAvailable();
+
 	void doTheThing();
-	bool finished();
-	bool mayAllocate(int input);
 	void deAllocate(int input);
 
+	bool finished();
+	bool mayAllocate(int input);
+	
 	void getFileInput();
+	void printCustomers();
+	void printAvailable();
 };
 
 

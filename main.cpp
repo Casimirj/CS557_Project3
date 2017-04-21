@@ -9,8 +9,7 @@ int main() {
 	object->doTheThing();
 
 
-
-
+	system("pause");
 
     return 0;
 }

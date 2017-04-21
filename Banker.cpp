@@ -88,20 +88,24 @@ void Banker::deAllocate(int input) {
 	}
 }
 void Banker::getFileInput() {
-	std::ifstream availableInput("/media/poop/Q/Programming/CLion/CS557_Project3");
-	//availableInput.open("available-input.txt");
-    for(int i = 0; i < 3; i++) {availableInput >> available[i];}
+	std::ifstream availableInput;
+	availableInput.open("available-input.txt");
+    for(int i = 0; i < numResources; i++) {availableInput >> available[i];}
 
-    availableInput.close();
+    
 
-    /*std::ifstream max;
+    std::ifstream max;
     max.open("max-input.txt");
-    for(int i = 0; i < numCustomers; i++)for(int k = 0; k < numResources; k++) max >> maximum[i][k];
+	for (int i = 0; i < numCustomers; i++)for (int k = 0; k < numResources; k++) { max >> maximum[i][k]; }
 
     std::ifstream allocated;
-    allocated.open("max-input.txt");
-    for(int i = 0; i < numCustomers; i++)for(int k = 0; k < numResources; k++) allocated >> allocation[i][k];
-*/
+    allocated.open("allocation-input.txt");
+	for (int i = 0; i < numCustomers; i++)for (int k = 0; k < numResources; k++) { allocated >> allocation[i][k]; }
+
 
     std::cout << "Inputs from files read...\n";
+
+	max.close();
+	allocated.close();
+	availableInput.close();
 }
