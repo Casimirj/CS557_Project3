@@ -2,7 +2,8 @@
 #define CS557_PROJECT3_BANKER_H
 
 #include<iostream>
-
+#include<string>
+#include<fstream>
 
 class Banker {
 private:
@@ -12,7 +13,7 @@ private:
 #define numCustomers 5
 #define numResources 3
 /* the available amount of each resource */
-int available[numResources] = { 3, 5, 1 };
+int available[numResources];
 /*the maximum demand of each customer */
 int maximum[numCustomers][numResources] = {
 	{ 3, 7, 6 },

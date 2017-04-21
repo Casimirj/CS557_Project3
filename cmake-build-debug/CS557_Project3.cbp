@@ -90,7 +90,16 @@
 		<Unit filename="/media/poop/Q/Programming/CLion/CS557_Project3/Banker.h">
 			<Option target="CS557_Project3"/>
 		</Unit>
+		<Unit filename="/media/poop/Q/Programming/CLion/CS557_Project3/allocation-input.txt">
+			<Option target="CS557_Project3"/>
+		</Unit>
+		<Unit filename="/media/poop/Q/Programming/CLion/CS557_Project3/available-input.txt">
+			<Option target="CS557_Project3"/>
+		</Unit>
 		<Unit filename="/media/poop/Q/Programming/CLion/CS557_Project3/main.cpp">
+			<Option target="CS557_Project3"/>
+		</Unit>
+		<Unit filename="/media/poop/Q/Programming/CLion/CS557_Project3/max-input.txt">
 			<Option target="CS557_Project3"/>
 		</Unit>
 		<Unit filename="/media/poop/Q/Programming/CLion/CS557_Project3/CMakeLists.txt">

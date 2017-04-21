@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/poop/Q/Programming/CLion/CS557_Project3/Banker.cpp
+Banker.h
+/media/poop/Q/Programming/CLion/CS557_Project3/Banker.h
+
+/media/poop/Q/Programming/CLion/CS557_Project3/Banker.h
+iostream
+-
+string
+-
+fstream
+-
+
+/media/poop/Q/Programming/CLion/CS557_Project3/main.cpp
+iostream
+-
+string
+-
+Banker.h
+/media/poop/Q/Programming/CLion/CS557_Project3/Banker.h
+

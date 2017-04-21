@@ -1,14 +1,9 @@
-//
-// Created by poop on 4/19/17.
-//
-
 #include "Banker.h"
-#include<string>
-#include<ifstream>
-#include<file>
+
 
 
 Banker::Banker() {
+    getFileInput();
 	for (int i = 0; i < numCustomers; i++) {
 		complete[i] = false;
 		for (int k = 0; k < numResources; k++) {
@@ -92,15 +87,21 @@ void Banker::deAllocate(int input) {
 		available[i] += allocation[input][i];
 	}
 }
-void getFileInput() {
-	
+void Banker::getFileInput() {
+	std::ifstream availableInput("/media/poop/Q/Programming/CLion/CS557_Project3");
+	//availableInput.open("available-input.txt");
+    for(int i = 0; i < 3; i++) {availableInput >> available[i];}
 
+    availableInput.close();
 
+    /*std::ifstream max;
+    max.open("max-input.txt");
+    for(int i = 0; i < numCustomers; i++)for(int k = 0; k < numResources; k++) max >> maximum[i][k];
 
+    std::ifstream allocated;
+    allocated.open("max-input.txt");
+    for(int i = 0; i < numCustomers; i++)for(int k = 0; k < numResources; k++) allocated >> allocation[i][k];
+*/
 
-
-
-
-
-
+    std::cout << "Inputs from files read...\n";
 }
